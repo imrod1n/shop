@@ -1,0 +1,145 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 6.5%;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 12%;
+    padding-top: 2.7%;
+}
+
+h2{
+    font-family: 'Newsreader', serif;
+    color: #426B1F;
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: auto 0;
+}
+
+nav{
+    width: 48%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+    height: 1rem;
+    padding: 1rem;
+}
+
+a{
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+
+.basket{
+    background-color: #426B1F;
+    border-radius: 10px;
+}
+
+.basket>a{
+    color: #ffffff;
+}
+
+.main__top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+
+}
+
+.main__name{
+    display: flex;
+}
+
+h1{
+    margin: 0;
+    margin-top: auto;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.main__name>pre{
+    margin-top: auto;
+    margin-bottom: .75rem;
+    margin-left: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+.sort{
+    margin: auto 0;
+}
+
+.sort__button{
+    border: #C2C2C2 solid 1px;
+    border-radius: 1.25rem;
+    padding: .75rem;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sort__button_current{
+    border-radius: 1.25rem;
+    padding: .75rem;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #426B1F;
+    color: #ffffff;
+    border: none;
+}
+
+hr{
+    margin: 1.5rem 0 2rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 31.6%;
+    border: #E6E6E6 solid 2px;
+    border-radius: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAFAF5;
+}
+
+.card__image{
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.card__title{
+    margin-bottom: .25rem;
+    margin-left: 1rem;
+}
+
+.card__price{
+    color: #426B1F;
+    font-weight: 600;
+    font-size: 1.17rem;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.card__place{
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
