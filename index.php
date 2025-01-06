@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,7 +34,21 @@
         </div>
         <hr>
         <div class="cards" id="cards">
-            <script src="script.js"></script>
+        <?php
+                    $pdo = new PDO("mysql:host=local;dbname=products_db;", "root", "");
+
+                    $sql = "SELECT * FROM productds";
+                    $query = $pdo->prepare($sql);
+                    $query->execute();
+                    $games = $query->fetchAll(PDO::FETCH_OBJ);
+                    foreach($games as $el)
+                        echo "<div class='card'>
+                                <img class='card__image' src=".$el->image." alt='tomato' width='100%'>
+                                <h3 class='card__title'>".$el->name."</h3>
+                                <p class='card__price'>".$el->price." / lb</p>
+                                <p class='card__place'>Grown in ".$el->place."</p>
+                              </div>"
+                ?>
         </div>
     </main>
 </body>
